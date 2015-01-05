@@ -1,0 +1,49 @@
+/****************************************
+  > File Name: t1.c
+  > Author: guqiang
+  > Mail: 544104926@qq.com
+  > Created Time: 2014年10月05日 星期日 20时44分41秒
+*****************************************/
+
+#include<stdio.h>
+/**************************************
+ * name:           int count_1(int number)
+ * Description:    统计数中1的位数
+ * calls:          no
+ * called by:      main
+ * input:          number
+ * output:         no
+ * return:         result
+**************************************/
+int count_1(int number)
+{
+    int i;
+    int result;
+
+    result = 0;
+
+    for(i = 0; i <= 32; i++)
+	{
+        if((n >> i) % 2 != 0)          //判断1
+		{
+			result++;
+		}
+    }
+
+    return result;
+}
+
+int main()
+{
+	int number;
+    int result=0;
+
+	printf("please enter an number:\n");
+	scanf("%d",&nnmber);
+
+    result = count_1(number);          //统计1
+    
+	printf("%d\n",result);
+
+	return 0;
+}
